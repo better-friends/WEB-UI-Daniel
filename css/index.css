@@ -150,7 +150,7 @@ h2 {
   margin-bottom: 20px;
 }
 p {
-  margin: 20px;
+  margin-bottom: 20px;
   line-height: 1.25;
 }
 .container {
@@ -174,6 +174,11 @@ p {
   margin-right: 395px;
   box-shadow: 0 0 40px 0 #F7B733;
 }
+@media (max-width: 500px) {
+  .intro h3 {
+    margin: 0px;
+  }
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -181,14 +186,30 @@ header {
   box-shadow: 0 0 25px 0 #FC4A1A;
   margin-bottom: 27px;
 }
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+}
 header nav {
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 500px) {
+  header nav {
+    flex-direction: column;
+  }
 }
 header nav a {
   margin: 0 10px;
   color: black;
   text-decoration: none;
+}
+@media (max-width: 500px) {
+  header nav a {
+    margin: 20px;
+  }
 }
 header nav a .birthday {
   height: auto;
@@ -213,6 +234,7 @@ header nav a .birthday {
 }
 img {
   border-radius: 10px;
+  width: 96%;
 }
 .birthday {
   height: auto;
@@ -224,8 +246,13 @@ img {
 }
 .grand {
   width: 95%;
-  margin-top: 26px;
+  margin-top: -3px;
 }
 .stay {
   width: 90%;
+}
+@media (max-width: 500px) {
+  .stay {
+    margin-top: 20px;
+  }
 }

@@ -64,6 +64,7 @@ table {
     font-size: 4rem;
     margin-left: 20px;
     color: black;
+
   }
   
   h2 {
@@ -72,7 +73,7 @@ table {
   }
   
   p {
-    margin: 20px;
+    margin-bottom: 20px;
     line-height: 1.25; 
   }
   .container {
@@ -96,6 +97,10 @@ table {
         margin-left: 359px;
         margin-right: 395px;
         box-shadow: 0 0 40px 0 #F7B733;
+        @media (max-width:500px){
+          margin: 0px;
+        }
+        
       }
     }
 
@@ -105,22 +110,30 @@ table {
     align-items: center; 
     box-shadow: 0 0 25px 0 #FC4A1A;
     margin-bottom: 27px;
-  nav {
+    @media (max-width:500px){
+      flex-direction: column;
+      margin-top: 20px;
+    }
+    nav {
     display: flex;
     justify-content: space-around;
-  
-   a {
+    @media (max-width:500px){
+      flex-direction: column;
+    }
+    a {
     margin: 0 10px;
     color: black;
     text-decoration: none;
-  
-  .birthday {
+    @media (max-width:500px){
+      margin: 20px;
+    }
+
+    .birthday {
     height:auto;
     width: 100%;
   }
 }
-}
-}
+}}
 .flex{
   display: flex;
   flex-wrap: wrap;
@@ -144,6 +157,7 @@ table {
   // Images ///////////////////////////////////
 img {
   border-radius: 10px;
+  width: 96%;
 }
 
 .birthday {
@@ -156,8 +170,11 @@ img {
 }
 .grand {
   width: 95%;
-  margin-top: 26px;
+  margin-top: -3px;
 }
 .stay{
   width: 90%;
+  @media (max-width:500px){
+    margin-top: 20px;
+  }
 }
