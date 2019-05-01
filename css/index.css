@@ -233,6 +233,12 @@ header nav a .birthday {
 .main-content h2 {
   align-items: center;
 }
+footer {
+  width: 100%;
+  position: fixed;
+  background: #FC4A1A;
+  border-top: 1px dashed white;
+}
 img {
   border-radius: 10px;
   width: 96%;
@@ -298,4 +304,24 @@ input {
   .container11 input {
     width: 90%;
   }
+}
+.accordion .panel {
+  padding: 30px;
+  border: 1px solid gray;
+}
+.accordion .panel .panel-bar {
+  display: flex;
+  justify-content: space-between;
+}
+.accordion .panel .panel-bar .panel-buttons button {
+  cursor: pointer;
+}
+.accordion .panel .panel-bar .panel-buttons .hide-btn {
+  display: none;
+}
+.accordion .panel .panel-content {
+  display: none;
+}
+.accordion .panel .toggle-on {
+  display: block;
 }
